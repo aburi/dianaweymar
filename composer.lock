@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2d7f68ea3d3e55b20ecfaa5c26a1b8b0",
+    "hash": "79a9e65cbc1d1694716e04c5e6a44034",
+    "content-hash": "c012d1d0cbb6e50e5ac3a527c2868d9a",
     "packages": [
         {
             "name": "composer/installers",
@@ -190,6 +191,48 @@
             "time": "2015-06-11 15:15:30"
         },
         {
+            "name": "roots/soil",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
+                "reference": "28d86c613c6f334d8fbfe514cfe01d893d9f5d89",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2016-01-21 02:48:35"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.2.0",
             "source": {
@@ -244,7 +287,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "roots/soil": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
