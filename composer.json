@@ -39,7 +39,9 @@
     "johnpbloch/wordpress": "4.4.1",
     "roots/soil": "dev-master",
     "yoast/wordpress-seo": "^2.3",
-    "wpackagist-plugin/ultimate-coming-soon-page": "1.16.0"
+    "wpackagist-plugin/ultimate-coming-soon-page": "1.16.0",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "0.9.11",
+    "wpackagist-plugin/imsanity": "2.3.6"
   },
   "extra": {
     "installer-paths": {

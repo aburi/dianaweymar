@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2c43f6aff574e490afdb8bdd0cf8466",
-    "content-hash": "9a6112171fa5b1a8ca3c389e9fafc656",
+    "hash": "14e67eadafbb0e212f9ce6efb238fc64",
+    "content-hash": "051840ce27624488f75e3efa0246328e",
     "packages": [
         {
             "name": "composer/installers",
@@ -282,6 +282,46 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "version": "0.9.11",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
+                "reference": "tags/0.9.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.9.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
+        },
+        {
+            "name": "wpackagist-plugin/imsanity",
+            "version": "2.3.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/imsanity/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/imsanity.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/imsanity/"
         },
         {
             "name": "wpackagist-plugin/ultimate-coming-soon-page",
