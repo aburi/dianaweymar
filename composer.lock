@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "14e67eadafbb0e212f9ce6efb238fc64",
-    "content-hash": "051840ce27624488f75e3efa0246328e",
+    "hash": "6596e1fd9fb1111a22fc4582bc330b95",
+    "content-hash": "b990bbfafb9e0370d9815736e6dcf987",
     "packages": [
         {
             "name": "composer/installers",
@@ -104,6 +104,71 @@
                 "zikula"
             ],
             "time": "2016-01-27 12:54:22"
+        },
+        {
+            "name": "deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "version": "0.9.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront.git",
+                "reference": "05861fab4f0f84fa8ee1a45173ff81e35caec620"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-s3-and-cloudfront/zipball/05861fab4f0f84fa8ee1a45173ff81e35caec620",
+                "reference": "05861fab4f0f84fa8ee1a45173ff81e35caec620",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "description": "Automatically copies media uploads to Amazon S3 for delivery. Optionally configure Amazon CloudFront for even faster delivery.",
+            "homepage": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "keywords": [
+                "amazon-web-services",
+                "cdn",
+                "cloudfront",
+                "plugin",
+                "s3"
+            ],
+            "time": "2015-12-19 11:17:43"
+        },
+        {
+            "name": "deliciousbrains/wp-amazon-web-services",
+            "version": "0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-amazon-web-services.git",
+                "reference": "9aa1091a0fb3c1180307626418a6f6a1c5c861fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-web-services/zipball/9aa1091a0fb3c1180307626418a6f6a1c5c861fe",
+                "reference": "9aa1091a0fb3c1180307626418a6f6a1c5c861fe",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "description": "Houses the Amazon Web Services (AWS) PHP libraries and manages access keys. Required by other AWS plugins.",
+            "homepage": "https://github.com/deliciousbrains/wp-amazon-web-services",
+            "keywords": [
+                "amazon",
+                "amazon-web-services",
+                "aws",
+                "plugin"
+            ],
+            "time": "2015-11-02 14:27:20"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -282,26 +347,6 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
-        },
-        {
-            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "0.9.11",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/0.9.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.0.9.11.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
         },
         {
             "name": "wpackagist-plugin/imsanity",
@@ -498,26 +543,27 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "2.3.5",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "d57354a7c2d0874a4eb0b42fc61148fd19d42c60"
+                "reference": "03156d3f045039cacb773ae56634766015328542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/d57354a7c2d0874a4eb0b42fc61148fd19d42c60",
-                "reference": "d57354a7c2d0874a4eb0b42fc61148fd19d42c60",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/03156d3f045039cacb773ae56634766015328542",
+                "reference": "03156d3f045039cacb773ae56634766015328542",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "xrstf/composer-php52": "^1.0.17",
+                "xrstf/composer-php52": "^1.0.19",
                 "yoast/api-libs": "^2.0",
                 "yoast/i18n-module": "^1.0",
                 "yoast/license-manager": "^1.2"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
                 "yoast/yoastcs": "dev-master"
             },
             "type": "wordpress-plugin",
@@ -525,7 +571,8 @@
                 "classmap": [
                     "admin/",
                     "frontend/",
-                    "inc/"
+                    "inc/",
+                    "deprecated/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -545,7 +592,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2015-09-16 10:01:14"
+            "time": "2015-12-23 10:19:52"
         }
     ],
     "packages-dev": [],

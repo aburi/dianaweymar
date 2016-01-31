@@ -38,10 +38,11 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.1",
     "roots/soil": "dev-master",
-    "yoast/wordpress-seo": "^2.3",
+    "yoast/wordpress-seo": "*",
     "wpackagist-plugin/ultimate-coming-soon-page": "1.16.0",
-    "wpackagist-plugin/amazon-s3-and-cloudfront": "0.9.11",
-    "wpackagist-plugin/imsanity": "2.3.6"
+    "wpackagist-plugin/imsanity": "2.3.6",
+    "deliciousbrains/wp-amazon-web-services": "^0.3.4",
+    "deliciousbrains/wp-amazon-s3-and-cloudfront": "^0.9.11"
   },
   "extra": {
     "installer-paths": {
