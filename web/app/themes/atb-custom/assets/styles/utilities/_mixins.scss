@@ -1,0 +1,48 @@
+// *************************************
+//
+//   Custom Mixins
+//
+// *************************************
+
+// -------------------------------------
+//   Second LEvel
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+//
+
+
+// -------------------------------------
+//   Masks
+//   @include mask($value);
+// -------------------------------------
+
+@mixin mask($opacity) {
+
+  &::before {
+    background: #000;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    opacity: $opacity;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+}
+
+
+// -------------------------------------
+//   Transitions
+//   @include transition($property);
+// -------------------------------------
+
+@mixin transition($property) {
+  transition-delay: 0.05s;
+  transition-duration: 0.4s;
+  transition-property: $property;
+  transition-timing-function: ease;
+}

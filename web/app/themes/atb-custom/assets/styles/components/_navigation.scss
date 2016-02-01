@@ -1,0 +1,70 @@
+// *************************************
+//
+//   Navigation
+//
+// *************************************
+
+// -------------------------------------
+//   Second Level
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+
+.banner {
+  margin: 50px 0 30px;
+
+  .brand {
+    // border-bottom: 1px solid $gray-lightest;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    &:hover {
+      color: $gray-light;
+    }
+  }
+}
+
+
+// -------------------------------------
+//   wp_nav_menu()
+// -------------------------------------
+
+.nav {
+  // @extend .nav;
+  // @extend .navbar-nav;
+  // margin: 0;
+
+  &-item {
+    // @extend .nav-item;
+  }
+
+  &--primary {
+
+    a {
+      // @extend .nav-link;
+      font-size: 1.05rem;
+    }
+
+    .active a {
+      @extend .active;
+      color: $gray;
+    }
+
+  }
+
+  &--footer {
+
+  }
+
+}
+
+.nav--primary {
+  @extend .center-block;
+  padding: 5px 0;
+  margin-top: 10px;
+  width: 255px;
+  border-bottom: 1px solid $gray-lightest;
+  border-top: 1px solid $gray-lightest;
+}

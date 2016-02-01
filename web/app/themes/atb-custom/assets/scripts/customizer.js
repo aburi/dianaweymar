@@ -1,6 +1,6 @@
 (function($) {
   // Site title
-  wp.customize('blogname', function(value) {
+  wp.customize('Diana Weymar', function(value) {
     value.bind(function(to) {
       $('.brand').text(to);
     });

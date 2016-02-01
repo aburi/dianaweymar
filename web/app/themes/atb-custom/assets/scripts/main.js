@@ -31,6 +31,25 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+
+        // load random image on page load
+        // http://www.markinns.com/articles/full/simple_two_line_image_randomiser_script_with_jquery
+        // var images = ['dw2.jpg', 'dw3.jpg', 'dw4.jpg', 'dw6.jpg', 'dw7.jpg', 'dw8.jpg'];
+        // $('body').css({'background-image': 'url(app/themes/atb-dianaweymar/dist/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+        console.log( "ready!" );
+
+        // $.backstretch("dw2.jpg");
+
+        // // Or, to start a slideshow, just pass in an array of images
+        $.backstretch([
+          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-1.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-2.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-3.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-4.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-5.jpg"
+        ], {duration: 6000, fade: 2000});
+
       }
     },
     // About us page, note the change from about-us to about_us.

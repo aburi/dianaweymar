@@ -1,41 +1,65 @@
-// WordPress Generated Classes
-// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+// *************************************
+//
+//   WordPress Generated Classes
+//   http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+//
+// *************************************
+
+// -------------------------------------
+//   Second Level
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+
+
+// -------------------------------------
+//   Media
+// -------------------------------------
+
+// img.wp-post-image
+// img.attachment-thumbnail
+// img.attachment-medium
+// img.attachment-large
+// img.attachment-full
 
 // Media alignment
 .alignnone {
+  @extend .img-fluid;
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
-  height: auto;
 }
+
 .aligncenter {
   display: block;
-  margin: ($line-height-computed / 2) auto;
-  height: auto;
+  margin: ($line-height / 2) auto;
 }
+
 .alignleft,
 .alignright {
-  margin-bottom: ($line-height-computed / 2);
-  height: auto;
+  margin-bottom: ($line-height / 2);
 }
-@media (min-width: $screen-sm-min) {
-  // Only float if not on an extra small device
-  .alignleft {
-    float: left;
-    margin-right: ($line-height-computed / 2);
-  }
-  .alignright {
-    float: right;
-    margin-left: ($line-height-computed / 2);
-  }
-}
+
+// @media (min-width: $screen-sm-min) {
+//   // Only float if not on an extra small device
+//   .alignleft {
+//     float: left;
+//     margin-right: ($line-height / 2);
+//   }
+//   .alignright {
+//     float: right;
+//     margin-left: ($line-height / 2);
+//   }
+// }
 
 // Captions
 .wp-caption {
   @extend .thumbnail;
 }
 .wp-caption-text {
-  padding: $thumbnail-caption-padding;
+  @extend .p-a;
 }
 
 // Text meant only for screen readers

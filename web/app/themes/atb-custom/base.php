@@ -32,7 +32,7 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
-      get_template_part('templates/footer');
+      if ( !is_front_page() && !is_page('contact') ) get_template_part('templates/footer');
       wp_footer();
     ?>
   </body>

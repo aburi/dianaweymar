@@ -1,0 +1,9 @@
+
+.blog .post {
+  border-bottom: 1px solid $gray-lightest;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+}

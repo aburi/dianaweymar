@@ -1,19 +1,52 @@
-@import "common/variables";
+// v0.1.0
+
+@import 'common/variables';
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/bootstrap/scss/_variables.scss";
+@import "../../bower_components/bootstrap/scss/_mixins.scss";
+@import "../../bower_components/bootstrap/scss/_normalize.scss";
+@import "../../bower_components/bootstrap/scss/_print.scss";
+@import "../../bower_components/bootstrap/scss/_reboot.scss";
+@import "../../bower_components/bootstrap/scss/_type.scss";
+@import "../../bower_components/bootstrap/scss/_images.scss";
+@import "../../bower_components/bootstrap/scss/_grid.scss";
+@import "../../bower_components/bootstrap/scss/_tables.scss";
+@import "../../bower_components/bootstrap/scss/_forms.scss";
+@import "../../bower_components/bootstrap/scss/_buttons.scss";
+@import "../../bower_components/bootstrap/scss/_nav.scss";
+@import "../../bower_components/bootstrap/scss/_navbar.scss";
+@import "../../bower_components/bootstrap/scss/_breadcrumb.scss";
+@import "../../bower_components/bootstrap/scss/_media.scss";
+@import "../../bower_components/bootstrap/scss/_utilities.scss";
+@import "../../bower_components/bootstrap/scss/_utilities-spacing.scss";
+@import "../../bower_components/bootstrap/scss/_utilities-responsive.scss";
 // endbower
 
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/grid";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import 'utilities/placeholders';
+@import 'utilities/mixins';
+@import 'utilities/utilities';
+
+@import 'common/global';
+@import 'common/typography';
+@import 'components/navigation';
+@import 'components/grid';
+@import 'components/card';
+@import 'components/media';
+@import 'components/wp-classes';
+
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+@import 'layout/pages';
+@import 'layout/posts';
+
+@import 'templates/home';
+@import 'templates/about';
+
+@import 'vendor/lightbox';
+
+@import 'shame';
+@import 'utilities/goodies';
+

@@ -1,0 +1,82 @@
+// *************************************
+//
+//   Media Cards
+//
+// *************************************
+
+// -------------------------------------
+//   Second Level
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+
+// -------------------------------------
+//   General Card
+// -------------------------------------
+
+.card {
+  // @include mask(.42);
+
+  a {}
+
+  &__title {
+
+  }
+
+}
+
+
+// -------------------------------------
+//   Gallery Card
+// -------------------------------------
+
+.card-gallery {
+  @extend %bg-cover;
+  // @include mask(.05);
+  height: 200px;
+  margin-bottom: 1.5rem;
+
+  // Medium devices (tablets, 48em and up)
+  @include media-breakpoint-up(md) {
+    height: 270px;
+  }
+
+  // Large devices (desktops, 62em and up)
+  @include media-breakpoint-up(lg) {
+    height: 300px;
+  }
+
+  a {
+    // @extend %fill;
+  }
+
+  &__title {
+    margin: 0;
+    z-index: 9;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    // text-rendering: optimizelegibility;
+  }
+
+}
+
+
+// -------------------------------------
+//   Art Piece Card
+// -------------------------------------
+
+.card-piece {
+  background-color: #fff;
+
+  img {
+    @include transition(opacity);
+  }
+
+  a:hover img {
+    opacity: 0.9;
+  }
+}
+

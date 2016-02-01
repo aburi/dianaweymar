@@ -1,0 +1,28 @@
+// *************************************
+//
+//   Placeholders
+//   http://thesassway.com/intermediate/understanding-placeholder-selectors
+//
+// *************************************
+
+// -------------------------------------
+//   Second Level
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+//
+
+// -------------------------------------
+//   Bacground Styles
+// -------------------------------------
+
+%bg-cover {
+  position: relative;
+  background-color: #F5F5F5;
+  // background-position: 50% center;
+  background-position : center center; // Background image is centered vertically and horizontally at all times
+  background-repeat   : no-repeat;
+  background-size     : cover; // This is what makes the background image rescale based on the container's size
+}

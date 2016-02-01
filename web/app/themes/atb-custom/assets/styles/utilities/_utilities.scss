@@ -1,0 +1,61 @@
+// *************************************
+//
+//   Placeholders
+//   http://thesassway.com/intermediate/understanding-placeholder-selectors
+//
+// *************************************
+
+// -------------------------------------
+//   Second Level
+// -------------------------------------
+
+// ----- Third Level ----- //
+
+// Fourth Level
+//
+
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+
+// -------------------------------------
+//   Vertial Alignment
+// -------------------------------------
+
+.va-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+// -------------------------------------
+//   Darken on Hover
+// -------------------------------------
+
+.darken-on-hover {
+
+  &::after {
+    @extend %fill;
+    @include transition(opacity);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.05;
+  }
+
+  &:hover::after {
+    opacity: 0.15;
+  }
+
+}
+
