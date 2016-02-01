@@ -7,7 +7,7 @@
 
     <div class="col-sm-push-3 col-sm-4">
 
-      <div class="text-center">
+      <div class="text-xs-center">
         <?php // the_content(); ?>
       </div>
 
