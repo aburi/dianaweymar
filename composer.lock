@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6596e1fd9fb1111a22fc4582bc330b95",
-    "content-hash": "b990bbfafb9e0370d9815736e6dcf987",
+    "hash": "2104d030711f23f024c74e923e78ba07",
+    "content-hash": "824a51ead47b4c1865c4cb42563a1b41",
     "packages": [
         {
             "name": "composer/installers",
@@ -169,6 +169,20 @@
                 "plugin"
             ],
             "time": "2015-11-02 14:27:20"
+        },
+        {
+            "name": "deliciousbrains/wp-migrate-db-pro",
+            "version": "1.5.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f44b9123-7f96-4323-abbb-a2ad5dde2096&site_url=dianaweymar.dev",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "v1.0.23"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "johnpbloch/wordpress",
