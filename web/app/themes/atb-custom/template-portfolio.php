@@ -18,19 +18,19 @@
     // 2. Get attachment IDs from gallery
     // 3. Loop through IDs and get attachment details
 
-    $gallery        = get_post_gallery( $post, false );
-    $attachment_ids = explode( ",", $gallery['ids'] );
+    $gallery = get_post_gallery($post, false);
+    $attachment_ids = explode(",", $gallery['ids']);
 
-    foreach( $attachment_ids as $attachment_id ) {
+    foreach ($attachment_ids as $attachment_id) {
 
       // $link        = wp_get_attachment_url($id);
 
       // Option #1
       // [0] => url, [1] => width, [2] => height
-      $image_sm   = wp_get_attachment_image_src( $attachment_id, 'thumbnail' )[0];
-      $image_lg   = wp_get_attachment_image_src( $attachment_id, 'full' )[0];
-      $title      = get_the_title($attachment_id);
-      $caption    = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+      $image_sm = wp_get_attachment_image_src($attachment_id, 'thumbnail')[0];
+      $image_lg = wp_get_attachment_image_src($attachment_id, 'full')[0];
+      $title = get_the_title($attachment_id);
+      $caption = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 
 
       // Option #2
@@ -49,19 +49,20 @@
 
       ?>
 
-        <div class="col-xs-5 col-sm-2 m-b-md">
+      <div class="col-xs-5 col-sm-2 m-b-md">
 
-          <div class="card-piece">
+        <div class="card-piece">
 
-            <a href="<?= $image_lg; ?>" data-lightbox="<?= get_the_title(); ?>" data-title="<?= $title . '<em>' . $caption . '</em><a>test</a>'; ?>">
+          <a href="<?= $image_lg; ?>" data-lightbox="<?= get_the_title(); ?>"
+             data-title="<?= $title . '<em>' . $caption . '</em><a>test</a>'; ?>">
 
-              <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" alt="<?= $title; ?>">
+            <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" alt="<?= $title; ?>">
 
-            </a>
-
-          </div>
+          </a>
 
         </div>
+
+      </div>
 
     <?php } ?>
 
@@ -77,13 +78,13 @@
 
 <script>
 
-  jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
 
     // Lazy Load
     $(".lazy").lazyload({
-      skip_invisible : false,
-      effect         : "fadeIn",
-      threshold      : 150
+      skip_invisible: false,
+      effect: "fadeIn",
+      threshold: 150
     });
 
   });

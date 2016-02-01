@@ -1,19 +1,17 @@
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="page-header sr-only">
-    <?php get_template_part('templates/page', 'header'); ?>
-  </div>
+  <?php // get_template_part('templates/page', 'header'); ?>
 
   <div class="row">
 
     <?php
 
     // == Galleries
-    // 1. Grab ID of Gallery Page (161)
+    // 1. Grab ID of Gallery Page (7)
     // 2. Loop through first-descendents
     // 3. Output feature img of each page
 
-    $galleries = array(9,7,11,17);
+    $galleries = array(28,31,34,37);
 
     foreach( $galleries as $id ) {
 
