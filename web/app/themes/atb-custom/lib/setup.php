@@ -53,7 +53,7 @@ function setup() {
 
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
-  add_editor_style(Assets\asset_path('styles/main.css'));
+  // add_editor_style(Assets\asset_path('styles/main.css'));
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -87,13 +87,14 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 function display_sidebar() {
   static $display;
 
-  isset($display) || $display = !in_array(true, [
+  isset($display) || $display != !in_array(true, [
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
     is_page(7),
     is_page_template('template-custom.php'),
+    is_page_template('template-portfolio.php')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

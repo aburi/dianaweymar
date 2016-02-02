@@ -1,0 +1,32 @@
+
+
+.block {
+  /* CSS declarations for `.block` */
+
+  @include e('element') {
+    /* CSS declarations for `.block__element` */
+  }
+
+  @include m('modifier') {
+    /* CSS declarations for `.block--modifier` */
+
+    @include e('element') {
+      /* CSS declarations for `.block--modifier__element` */
+    }
+  }
+}
+
+
+.article {
+
+  a {
+    text-decoration: underline;
+  }
+
+  @include m('page') {
+
+    @include e('element') {
+
+    }
+  }
+}

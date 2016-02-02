@@ -49,19 +49,13 @@
 
       ?>
 
-      <div class="col-xs-5 col-sm-2 m-b-md">
-
+      <div class="col-xs-5 col-sm-2 m-b-2">
         <div class="card-piece">
-
           <a href="<?= $image_lg; ?>" data-lightbox="<?= get_the_title(); ?>"
              data-title="<?= $title . '<em>' . $caption . '</em><a>test</a>'; ?>">
-
             <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" alt="<?= $title; ?>">
-
           </a>
-
         </div>
-
       </div>
 
     <?php } ?>
@@ -76,6 +70,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.js"></script> -->
 
+<!--TODO add scripts to main.js-->
 <script>
 
   jQuery(document).ready(function ($) {

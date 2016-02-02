@@ -1,4 +1,4 @@
-<footer class="content-info footer m-b-lg">
+<footer class="content-info footer m-y-2">
   <div class="container">
 
     <hr>
@@ -22,7 +22,7 @@
       </nav>
 
       <ul class="list-inline pull-left">
-        <li>&copy; Copyright 2015. Diana Weymar</li>
+        <li>&copy; Copyright <?= date("Y"); ?>. Diana Weymar</li>
       </ul>
 
     </div>

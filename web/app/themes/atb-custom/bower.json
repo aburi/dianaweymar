@@ -31,6 +31,7 @@
         "./scss/_breadcrumb.scss",
         "./scss/_media.scss",
         "./scss/_utilities.scss",
+        "./scss/_utilities-background.scss",
         "./scss/_utilities-spacing.scss",
         "./scss/_utilities-responsive.scss"
       ]

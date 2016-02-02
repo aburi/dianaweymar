@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
 
-<header class="page-header text-xs-center m-b-md <?php if (is_page( 85,89 )) echo 'sr-only'; ?>">
+<header class="header--page text-xs-center m-b-1 <?php if (is_page( 9 )) echo 'sr-only'; ?>">
   <h1><?= Titles\title(); ?></h1>
 </header>

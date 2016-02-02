@@ -73,6 +73,7 @@
 
   img {
     @include transition(opacity);
+    border-radius: 1px;
   }
 
   a:hover img {
