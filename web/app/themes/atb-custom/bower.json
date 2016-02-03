@@ -9,8 +9,7 @@
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#4.0.0-alpha.2",
     "jquery-backstretch-2": "^2.1.2",
-    "jquery_lazyload": "^1.9.1",
-    "lightbox2": "^2.8.2"
+    "jquery_lazyload": "^1.9.1"
   },
   "overrides": {
     "bootstrap": {

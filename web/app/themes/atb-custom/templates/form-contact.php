@@ -17,6 +17,6 @@
     <textarea name="message" class="form-control" rows="7" required placeholder="Message"></textarea>
   </div>
 
-  <button type="submit" class="btn btn-primary btn-block">Get in touch.</button>
+  <button type="submit" class="btn btn-primary btn-block">Send</button>
 
 </form>

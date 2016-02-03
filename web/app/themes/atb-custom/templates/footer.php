@@ -7,8 +7,7 @@
 
     <div class="clearfix">
 
-      <nav class="pull-right">
-
+      <nav class="pull-xs-right">
         <?php
         if (has_nav_menu('footer_navigation')) :
           wp_nav_menu([
@@ -18,11 +17,10 @@
           ]);
         endif;
         ?>
-
       </nav>
 
-      <ul class="list-inline pull-left">
-        <li>&copy; Copyright <?= date("Y"); ?>. Diana Weymar</li>
+      <ul class="list-inline pull-xs-left">
+        <li class="list-inline-item">&copy; Copyright <?= date("Y"); ?>. Diana Weymar</li>
       </ul>
 
     </div>
