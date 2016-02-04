@@ -21,6 +21,7 @@
 @import "../../bower_components/bootstrap/scss/_utilities-background.scss";
 @import "../../bower_components/bootstrap/scss/_utilities-spacing.scss";
 @import "../../bower_components/bootstrap/scss/_utilities-responsive.scss";
+@import "../../bower_components/photoswipe/src/css/main.scss";
 // endbower
 
 @import 'utilities/placeholders';
@@ -41,7 +42,7 @@
 @import "layouts/tinymce";
 @import 'templates/home';
 @import 'templates/about';
-@import 'vendor/lightbox';
+@import 'vendor/photoswipe';
 @import 'shame';
 @import 'utilities/goodies';
 

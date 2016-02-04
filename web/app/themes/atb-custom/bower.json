@@ -9,7 +9,8 @@
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#4.0.0-alpha.2",
     "jquery-backstretch-2": "^2.1.2",
-    "jquery_lazyload": "^1.9.1"
+    "jquery_lazyload": "^1.9.1",
+    "photoswipe": "^4.1.1"
   },
   "overrides": {
     "bootstrap": {
@@ -33,6 +34,13 @@
         "./scss/_utilities-background.scss",
         "./scss/_utilities-spacing.scss",
         "./scss/_utilities-responsive.scss"
+      ]
+    },
+    "photoswipe": {
+      "main": [
+        "src/css/main.scss",
+        "dist/photoswipe.js",
+        "dist/photoswipe-ui-default.js"
       ]
     }
   }
