@@ -3,18 +3,11 @@
 
   <?php get_template_part('templates/page', 'header'); ?>
 
-  <div class="row">
-
-    <div class="col-sm-push-3 col-sm-4">
-
-      <div class="text-xs-center">
-        <?php // the_content(); ?>
-      </div>
-
+  <div class="row m-t-3">
+    <div class="col-xs-10 col-sm-push-2 col-sm-6">
+      <?php the_content(); ?>
       <?php get_template_part('templates/form', 'contact'); ?>
-
     </div>
-
   </div>
 
 <?php endwhile; ?>

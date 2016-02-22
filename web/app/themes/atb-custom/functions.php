@@ -26,3 +26,22 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+
+
+/**
+ * Remove 'Home' from breadcrumbs
+ */
+function remove_home_from_breadcrumb($links) {
+
+  if ( $links[0]['url'] == get_home_url() ) {
+
+    array_shift($links);
+
+  }
+
+  return $links;
+
+}
+add_filter('wpseo_breadcrumb_links', 'remove_home_from_breadcrumb');

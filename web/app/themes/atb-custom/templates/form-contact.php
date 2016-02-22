@@ -1,22 +1,21 @@
-
 <form action="" method="POST" role="form">
 
   <legend class="sr-only">Contact Form</legend>
 
-  <div class="form-group">
+  <fieldset class="form-group">
     <label for="name" class="sr-only">Name</label>
     <input name="name" type="text" class="form-control" placeholder="Your name" required>
-  </div>
+  </fieldset>
 
-  <div class="form-group">
+  <fieldset class="form-group">
     <label for="email" class="sr-only"></label>
-    <input name="email" type="email" class="form-control" placeholder="Email address" required>
-  </div>
+    <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+  </fieldset>
 
-  <div class="form-group">
+  <fieldset class="form-group">
     <textarea name="message" class="form-control" rows="7" required placeholder="Message"></textarea>
-  </div>
+  </fieldset>
 
-  <button type="submit" class="btn btn-primary btn-block">Send</button>
+  <button type="submit" class="btn btn-primary btn-block btn-lg">Send</button>
 
 </form>

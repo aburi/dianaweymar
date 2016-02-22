@@ -8,10 +8,11 @@
 
     // == Galleries
     // 1. Grab ID of Gallery Page (7)
-    // 2. Loop through first-descendents
+    // 2. Loop through first-descendants
     // 3. Output feature img of each page
 
-    $galleries = array(28,31,34,37);
+//    $galleries = array(28,31,34,37);
+    $galleries = array(68,70,74,72);
 
     foreach( $galleries as $id ) {
 

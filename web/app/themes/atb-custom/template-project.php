@@ -1,13 +1,13 @@
 <?php
 /**
- * Template Name: Portfolio Template
+ * Template Name: Project
  */
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <?php get_template_part('templates/headers/portfolio', 'header'); ?>
-
+  <?php get_template_part('templates/metabar'); ?>
+  <?php get_template_part('templates/page', 'header'); ?>
   <?php // get_template_part('templates/content', 'page'); ?>
 
 
@@ -25,12 +25,10 @@
 
       foreach ($attachment_ids as $attachment_id) {
 
-        // $link        = wp_get_attachment_url($id);
-
         // Option #1
         // [0] => url, [1] => width, [2] => height
         $image_sm = wp_get_attachment_image_src($attachment_id, 'thumbnail')[0];
-        $image_lg = wp_get_attachment_image_src($attachment_id, 'full')[0];
+        $image_lg = wp_get_attachment_image_src($attachment_id, 'full');
         $title = get_the_title($attachment_id);
         $caption = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 
@@ -43,15 +41,10 @@
         // $alt         = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
         // $href        = get_permalink( $attachment->ID );
 
-        // Option #3
-        // $at= wp_get_attachment($attachment_id);
-        // print_r($at); // show array of all image detail like title , caption etc
-
         ?>
 
-        <figure class="col-xs-5 col-sm-2 m-b-2" itemprop="associatedMedia" itemscope
-                itemtype="http://schema.org/ImageObject">
-          <a href="<?= $image_lg; ?>" itemprop="contentUrl" data-size="1440x966">
+        <figure class="col-xs-5 col-sm-2 m-b-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="<?= $image_lg[0]; ?>" itemprop="contentUrl" data-size="<?= $image_lg[1] . 'x' . $image_lg[2] ?>">
             <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" itemprop="thumbnail" alt="<?= $title; ?>"/>
           </a>
           <figcaption class="sr-only" itemprop="caption description"><?= $title; ?></figcaption>

@@ -1,4 +1,4 @@
-<footer class="content-info footer m-y-2">
+<footer class="content-info footer m-t-1 m-b-2">
   <div class="container">
 
     <hr>

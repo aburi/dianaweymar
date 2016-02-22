@@ -44,9 +44,9 @@
   }
 
   // Large devices (desktops, 62em and up)
-  @include media-breakpoint-up(lg) {
-    height: 300px;
-  }
+  //@include media-breakpoint-up(lg) {
+  //  height: 300px;
+  //}
 
   a {
     // @extend %fill;

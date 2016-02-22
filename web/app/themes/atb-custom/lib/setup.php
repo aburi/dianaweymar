@@ -43,6 +43,9 @@ function setup() {
   update_option( 'thumbnail_size_w', 300 );
   update_option( 'thumbnail_size_h', 300 );
   update_option( 'thumbnail_crop', 1 );
+  update_option( 'medium_size_w', 500 );
+  update_option( 'medium_size_h', 333 );
+  update_option( 'medium_crop', 1 );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -95,7 +98,7 @@ function display_sidebar() {
     is_front_page(),
     is_page(7),
     is_page_template('template-custom.php'),
-    is_page_template('template-portfolio.php')
+    is_page_template('template-project.php')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
