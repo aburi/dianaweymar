@@ -42,7 +42,7 @@
 
   &--primary {
     margin-top: 10px;
-    max-width: 383px;
+    max-width: 403px;
 
     ul {
       padding: 5px 0;
@@ -80,7 +80,6 @@
 // -------------------------------------
 
 .metabar {
-  //@extend .text-muted;
-  color: $gray-light;
+  color: #55595c;
   font-size: 0.95rem;
 }

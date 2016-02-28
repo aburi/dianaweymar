@@ -107,16 +107,16 @@
         },
         {
             "name": "deliciousbrains/wp-amazon-s3-and-cloudfront",
-            "version": "0.9.11",
+            "version": "0.9.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront.git",
-                "reference": "05861fab4f0f84fa8ee1a45173ff81e35caec620"
+                "reference": "e421de54dec834d7e41fe8cd3992c300834db6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-s3-and-cloudfront/zipball/05861fab4f0f84fa8ee1a45173ff81e35caec620",
-                "reference": "05861fab4f0f84fa8ee1a45173ff81e35caec620",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-s3-and-cloudfront/zipball/e421de54dec834d7e41fe8cd3992c300834db6f3",
+                "reference": "e421de54dec834d7e41fe8cd3992c300834db6f3",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
                 "plugin",
                 "s3"
             ],
-            "time": "2015-12-19 11:17:43"
+            "time": "2016-02-03 13:25:33"
         },
         {
             "name": "deliciousbrains/wp-amazon-web-services",

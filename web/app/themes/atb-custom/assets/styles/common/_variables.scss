@@ -16,13 +16,15 @@
 // $icon-font-path      : "../fonts/";
 
 // ----- Typography ----- //
-$font-family-sans-serif : 'Ovo','Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: 'Ovo', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-size-root: 17px;
 // $font-size-h1           : 2.5rem;
-$font-size-h2           : 1.65rem;
+$font-size-h2: 1.65rem;
 // $font-size-h3           : 1.75rem;
 // $font-size-h4           : 1.5rem;
 // $font-size-h5           : 1.25rem;
 // $font-size-h6           : 1rem;
+$line-height: 1.7;
 
 // ----- Colors ----- //
 //$brand-primary          : #6a94b8;
@@ -30,35 +32,34 @@ $font-size-h2           : 1.65rem;
 // $brand-info          : #5bc0de !default;
 // $brand-warning       : #f0ad4e !default;
 // $brand-danger        : #d9534f !default;
-$brand-primary          : #9EC3D0;
-$brand-success          : #7E5F43;
-$brand-success          : #7E5F43;
+$brand-primary: #9EC3D0;
+$brand-success: #7E5F43;
+$brand-success: #7E5F43;
 
 // ----- Options ----- //
-$enable-flex            : true;
+$enable-flex: true;
 
 // ----- Grid containers ----- //
-$container-max-widths   : (
-  md : 900px,
-  lg : 900px,
-  xl : 800px
+$container-max-widths: (
+        md : 900px,
+        lg : 900px,
+        xl : 800px
 );
 
 // ----- Grid columns ----- //
 // Grid settings
 //$main-sm-columns:       12;
 //$sidebar-sm-columns:    4;
-$grid-columns           : 10;
+$grid-columns: 10;
 // $sidebar-sm-columns  : 4;
 
 // ----- Container sizes ----- //
 // $container-lg           : 970px;
 
 // ----- Components ----- //
-$border-radius:          .15rem !default;
+$border-radius: .15rem !default;
 // $border-radius-lg:       .3rem !default;
 // $border-radius-sm:       .2rem !default;
-
 
 // -------------------------------------
 //   Vendor Overrides

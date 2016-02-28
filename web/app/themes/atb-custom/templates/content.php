@@ -1,4 +1,4 @@
-<article class="media <?php post_class(); ?>">
+<article <?php post_class('media'); ?>>
 
   <?php if (has_post_thumbnail()) {
     $post_thumbnail_id = get_post_thumbnail_id( $post );

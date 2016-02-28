@@ -77,5 +77,5 @@ if (!defined('ABSPATH')) {
 /**
  * Access Keys
  */
-define( 'AWS_ACCESS_KEY_ID', 'AKIAJXATSPKONKIRHHDA' );
-define( 'AWS_SECRET_ACCESS_KEY', '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' );
+define( 'AWS_ACCESS_KEY_ID', 'AKIAJIVWTONUV2SEDK3Q' );
+define( 'AWS_SECRET_ACCESS_KEY', '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' );
