@@ -1,36 +1,40 @@
+// *************************************
+//
+//   Article Styles
+//
+// *************************************
 
-
-.block {
-  /* CSS declarations for `.block` */
-
-  @include e('element') {
-    /* CSS declarations for `.block__element` */
-  }
-
-  @include m('modifier') {
-    /* CSS declarations for `.block--modifier` */
-
-    @include e('element') {
-      /* CSS declarations for `.block--modifier__element` */
-    }
-  }
-}
-
-
-.article {
+article {
 
   a {
     text-decoration: underline;
   }
 
-  @include m('page') {
+  .entry-summary {
+    font-size: 0.9rem;
+    line-height: 1.5;
 
-    @include e('element') {
-
+    p {
+      margin-bottom: 0;
     }
   }
 
-  .entry-summary {
-    font-size: 0.9rem;
+  &.media {
+    border-bottom: 1px solid $gray-lightest;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .byline {
+      margin-top: 0.25rem;
+      color: $gray-light;
+      font-size: 85%;
+    }
   }
+
 }

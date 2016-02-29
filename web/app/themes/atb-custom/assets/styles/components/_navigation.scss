@@ -16,7 +16,7 @@
   //margin: 50px 0 30px;
 
   .brand {
-    // border-bottom: 1px solid $gray-lightest;
+    display: block;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
@@ -26,7 +26,6 @@
   }
 }
 
-
 // -------------------------------------
 //   wp_nav_menu()
 // -------------------------------------
@@ -35,6 +34,7 @@
   // @extend .nav;
   // @extend .navbar-nav;
   // margin: 0;
+  display: inline-block;
 
   &-item {
     // @extend .nav-item;
@@ -42,7 +42,7 @@
 
   &--primary {
     margin-top: 10px;
-    max-width: 403px;
+    //max-width: 403px;
 
     ul {
       padding: 5px 0;
@@ -74,12 +74,12 @@
 
 }
 
-
 // -------------------------------------
 //   metabar
 // -------------------------------------
 
 .metabar {
-  color: #55595c;
+  color: $gray-light;
   font-size: 0.95rem;
+  font-weight: lighter;
 }

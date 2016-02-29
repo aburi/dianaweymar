@@ -7,11 +7,16 @@
 
   <div class="breadcrumbs pull-xs-left">
     <?php
-    if (is_home()):
+    if (is_home()) {
       echo 'Latest Articles';
-    else :
+    } elseif (is_single()) {
+      $categories = get_the_category();
+      if (!empty($categories)) {
+        echo esc_html($categories[0]->name);
+      }
+    } else {
       get_the_title(get_the_ID());
-    endif;
+    }
     ?>
   </div>
   <div class="pull-xs-right">
