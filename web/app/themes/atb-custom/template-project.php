@@ -15,36 +15,28 @@
 
       <?php
 
-      // 1. Get the post's gallery
-      // 2. Get attachment IDs from gallery
-      // 3. Loop through IDs and get attachment details
+      // Step 1: Get the post's gallery
+      // Step 2: Get attachment IDs from gallery
+      // Step 3: Loop through IDs and get attachment details
 
       $gallery = get_post_gallery($post, false);
       $attachment_ids = explode(",", $gallery['ids']);
 
       foreach ($attachment_ids as $attachment_id) {
 
-        // Option #1
         // [0] => url, [1] => width, [2] => height
         $image_sm = wp_get_attachment_image_src($attachment_id, 'thumbnail')[0];
         $image_lg = wp_get_attachment_image_src($attachment_id, 'full');
         $title = get_the_title($attachment_id);
         $caption = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 
-        // Option #2
-        // $attachment  = get_post( $attachment_id );
-        // $caption     = $attachment->post_excerpt;
-        // $description = $attachment->post_content;
-        // $src         = $attachment->guid;
-        // $title       = $attachment->post_title;
-        // $alt         = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
-        // $href        = get_permalink( $attachment->ID );
-
         ?>
 
-        <figure class="col-xs-5 col-sm-2 m-b-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <figure class="col-xs-5 col-sm-2 m-b-2" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
           <a href="<?= $image_lg[0]; ?>" itemprop="contentUrl" data-size="<?= $image_lg[1] . 'x' . $image_lg[2] ?>">
-            <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" itemprop="thumbnail" alt="<?= $title; ?>"/>
+            <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" itemprop="thumbnail"
+                 alt="<?= $title; ?>"/>
           </a>
           <figcaption class="sr-only" itemprop="caption description"><?= $title; ?></figcaption>
         </figure>
@@ -120,7 +112,6 @@
 
 <!--TODO add scripts to main.js-->
 <script>
-  //  jQuery(document).ready(function ($) {
 
   var initPhotoSwipeFromDOM = function (gallerySelector) {
 
@@ -271,7 +262,12 @@
             rect = thumbnail.getBoundingClientRect();
 
           return {x: rect.left, y: rect.top + pageYScroll, w: rect.width};
-        }
+        },
+
+        // Custom Options
+        showHideOpacity: true,
+        getThumbBoundsFn: false,
+        bgOpacity: 0.9
 
       };
 
@@ -303,14 +299,6 @@
         options.showAnimationDuration = 0;
       }
 
-      // Custom Options
-      var options = {
-        showHideOpacity: true,
-        getThumbBoundsFn: false,
-        bgOpacity: 0.9
-      };
-
-
       // Pass data to PhotoSwipe and initialize it
       gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
       gallery.init();
@@ -334,6 +322,4 @@
   // execute above function
   initPhotoSwipeFromDOM('.my-gallery');
 
-
-  //  });
 </script>
