@@ -10,7 +10,6 @@
   <?php get_template_part('templates/page', 'header'); ?>
   <?php // get_template_part('templates/content', 'page'); ?>
 
-
   <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
     <div class="row">
 

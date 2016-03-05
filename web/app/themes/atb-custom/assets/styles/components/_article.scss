@@ -37,4 +37,16 @@ article {
     }
   }
 
+  .first-letter {
+    font-size: 1.6rem;
+    line-height: 32px;
+  }
+
+  p.meta-text {
+    @extend .text-muted;
+    line-height: 1.65;
+    font-size: 80%;
+    font-style: italic;
+  }
+
 }
