@@ -1,0 +1,34 @@
+// *************************************
+//
+//   Asies
+//
+// *************************************
+
+.aside {
+
+  &-event {
+
+
+
+  }
+
+}
+
+.aside {
+  font-size: 0.9rem;
+
+  @include e('key') {
+  }
+
+  @include e('value') {
+  }
+
+  @include m('event') {
+    /* CSS declarations for `.block--modifier` */
+    max-width: 30%;
+
+    @include e('key') {
+      /* CSS declarations for `.block--modifier__element` */
+    }
+  }
+}

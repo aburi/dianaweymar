@@ -1,6 +1,8 @@
 <?php get_template_part('templates/metabar'); ?>
 <?php get_template_part('templates/page', 'header'); ?>
 
+<div class="metabar m-b-1 text-danger"><small>*Note: page under construction - more articles to be added shortly.</small></div>
+
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>

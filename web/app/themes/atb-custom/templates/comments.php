@@ -4,7 +4,7 @@ if (post_password_required()) {
 }
 ?>
 
-<section id="comments" class="comments">
+<section id="comments" class="comments m-b-2">
   <?php if (have_comments()) : ?>
     <h2><?php printf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h2>
 
@@ -32,5 +32,14 @@ if (post_password_required()) {
     </div>
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php
+  $comments_args = array(
+    'label_submit' => 'Submit',
+    'title_reply' => 'Leave your comments',
+    'comment_notes_after' => '',
+    'class_form' => 'comment-form'
+  );
+
+  comment_form($comments_args);
+  ?>
 </section>

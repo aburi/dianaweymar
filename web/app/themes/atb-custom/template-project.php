@@ -36,9 +36,9 @@
                 itemtype="http://schema.org/ImageObject">
           <a href="<?= $image_lg[0]; ?>" itemprop="contentUrl" data-size="<?= $image_lg[1] . 'x' . $image_lg[2] ?>">
             <img height="300" width="300" class="img-fluid" src="<?= $image_sm; ?>" itemprop="thumbnail"
-                 alt="<?= $title; ?>"/>
+                 alt="<?= $title; ?> by Diana Weymar"/>
           </a>
-          <figcaption class="sr-only" itemprop="caption description"><?= $title; ?></figcaption>
+          <figcaption class="sr-only" itemprop="caption description"><?= $title; ?> by Diana Weymar</figcaption>
         </figure>
 
       <?php } ?>
