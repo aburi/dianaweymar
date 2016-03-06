@@ -1,4 +1,4 @@
-<div class="metabar clearfix m-b-1">
+<div class="metabar clearfix m-b-1 sr-only">
 
   <!--    <a href="-->
   <? //= get_the_permalink(24); ?><!--" title="See all listings">&#171; Back to Exhibitions &amp; News</a>-->

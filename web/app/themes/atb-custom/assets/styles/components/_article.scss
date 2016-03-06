@@ -16,6 +16,9 @@ article {
 
     p {
       margin-bottom: 0;
+      @extend .text-muted;
+      line-height: 1.65;
+      font-size: 90%;
     }
   }
 
@@ -42,7 +45,7 @@ article {
     line-height: 32px;
   }
 
-  p.meta-text {
+  .meta-text {
     @extend .text-muted;
     line-height: 1.65;
     font-size: 80%;
