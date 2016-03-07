@@ -1,4 +1,4 @@
-<div class="metabar clearfix m-b-1 sr-only">
+<div class="metabar clearfix m-b-1">
 
   <!--    <a href="-->
   <? //= get_the_permalink(24); ?><!--" title="See all listings">&#171; Back to Exhibitions &amp; News</a>-->
@@ -15,7 +15,7 @@
         echo esc_html($categories[0]->name);
       }
     } else {
-      get_the_title(get_the_ID());
+      echo get_the_title(get_the_ID());
     }
     ?>
   </div>

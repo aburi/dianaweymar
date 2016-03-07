@@ -1,4 +1,3 @@
-<?php get_template_part('templates/metabar'); ?>
 <?php get_template_part('templates/page', 'header'); ?>
 
 <div class="metabar m-b-1 text-danger"><small>*Note: page under construction - more articles to be added shortly.</small></div>

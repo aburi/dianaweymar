@@ -13,8 +13,6 @@
 
   <article <?php post_class('m-b-3'); ?>>
 
-    <?php get_template_part('templates/metabar'); ?>
-
     <header class="header m-t-2">
       <?php get_template_part('templates/entry-meta'); ?>
       <h1 class="entry-title"><?php the_title(); ?></h1>

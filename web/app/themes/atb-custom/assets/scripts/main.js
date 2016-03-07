@@ -39,15 +39,14 @@
 
         console.log("ready!");
 
-        // $.backstretch("dw2.jpg");
-
-        // // Or, to start a slideshow, just pass in an array of images
+        // slideshow
         $.backstretch([
-          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-1.jpg",
-          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-2.jpg",
-          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-3.jpg",
-          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-4.jpg",
-          "http://dianaweymar.s3.amazonaws.com/images/hero-diana-weymar-5.jpg"
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-1.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-2.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-6.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-3.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-4.jpg",
+          "http://dianaweymar.s3.amazonaws.com/images/diana-weymar-artwork-5.jpg"
         ], {duration: 6000, fade: 2000});
 
       }
