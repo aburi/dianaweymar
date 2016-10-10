@@ -29,14 +29,14 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
         "type": "wordpress-plugin",
-        "version": "1.5.3",
+        "version": "1.6",
         "dist": {
           "type": "zip",
           "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f44b9123-7f96-4323-abbb-a2ad5dde2096&site_url=dianaweymar.dev"
